@@ -1,53 +1,11 @@
-/*
-Syntax error: Invalid CSS after "	gradient-bg": expected "{", was "(#F68A28, #F36C..."
-        on line 23 of /Users/peterlower/Sites/lowermedia_roots_custom/sass/screen.scss
-
-Backtrace:
-/Users/peterlower/Sites/lowermedia_roots_custom/sass/screen.scss:23
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1130:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:517:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `call'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
-/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:30
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
-/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44
-/usr/bin/compass:19:in `load'
-/usr/bin/compass:19
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"	gradient-bg\": expected \"{\", was \"(#F68A28, #F36C...\"\A         on line 23 of /Users/peterlower/Sites/lowermedia_roots_custom/sass/screen.scss"; }
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 22, ../sass/screen.scss */
+.navbar-inner {
+  background-color: #f68a28;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f68a28, endColorstr=#f36c00);
+  background-image: -moz-linear-gradient(center top, #f68a28, #f36c00);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f68a28), to(#f36c00));
+}

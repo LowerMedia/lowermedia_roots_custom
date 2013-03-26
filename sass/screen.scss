@@ -20,6 +20,6 @@
 }
 
 .navbar-inner {
-	gradient-bg(#F68A28, #F36C00);
+	@include gradient-bg(#F68A28, #F36C00);
 	//background: -moz-linear-gradient(center top , #F68A28, #F36C00) repeat scroll 0 0 transparent;
 }
