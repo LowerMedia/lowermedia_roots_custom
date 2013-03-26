@@ -1,68 +1,53 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
+/*
+Syntax error: Invalid CSS after "	gradient-bg": expected "{", was "(#F68A28, #F36C..."
+        on line 23 of /Users/peterlower/Sites/lowermedia_roots_custom/sass/screen.scss
 
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
+Backtrace:
+/Users/peterlower/Sites/lowermedia_roots_custom/sass/screen.scss:23
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1130:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1066:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1061:in `tok!'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:517:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:574:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1104:in `rethrow'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:575:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:537:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:526:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:518:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:512:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:536:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:529:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:70:in `stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:342:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:315:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/engine.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:68:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:30
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.2/bin/compass:44
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"	gradient-bg\": expected \"{\", was \"(#F68A28, #F36C...\"\A         on line 23 of /Users/peterlower/Sites/lowermedia_roots_custom/sass/screen.scss"; }
