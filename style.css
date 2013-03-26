@@ -1,0 +1,55 @@
+/*
+Theme Name:         LowerMedia Roots Custom
+Theme URI:          http://www.rootstheme.com/
+Description:        Roots is a starting WordPress theme made for developers that's based on HTML5 Boilerplate and Bootstrap. <a href="https://github.com/retlehs/roots/contributors">Contribute on GitHub</a>
+Version:            6.2.0
+Author:             Ben Word
+Author URI:         http://benword.com/
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+body {
+background-color:#35B137;
+}
+
+#wrap {
+    background: none repeat scroll 0 0 white;
+    margin: auto;
+    width: 100%;
+}
+
+#content {
+    margin: auto;
+    width: 70%;
+}
+
+.navbar-inner {
+	background: -moz-linear-gradient(center top , #F68A28, #F36C00) repeat scroll 0 0 transparent;
+}
+
+.navbar-inner .container {
+	width: 70%;
+	margin:auto;
+}
+
+body.top-navbar {
+    padding-top: 40px;
+}
+
+.navbar .nav > li > a {
+	color: white;
+	float: none;
+	font-size: 20px;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 black;
+}
+
+/*FOOTER STYLES*/
+#content-info {
+    background-color: #35B137;
+    margin: auto;
+    width: 100%;
+}
