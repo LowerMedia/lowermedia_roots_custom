@@ -11,7 +11,7 @@ License URI:        http://opensource.org/licenses/MIT
 */
 
 /* Import SASS Styles */
-@import url('../responsive/style.css');
+@import url('stylesheets/screen.css');
 
 body {
 background-color:#35B137;
@@ -28,9 +28,6 @@ background-color:#35B137;
     width: 70%;
 }
 
-.navbar-inner {
-	background: -moz-linear-gradient(center top , #F68A28, #F36C00) repeat scroll 0 0 transparent;
-}
 
 .navbar-inner .container {
 	width: 70%;
