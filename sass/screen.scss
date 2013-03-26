@@ -19,7 +19,33 @@
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
 }
 
+//	Circle - LowerMedia Custom Function
+//
+//	$hiwi == height and width (they must be equal for the circle to work)
+@mixin ptl_circle($hewi){
+	border-radius: $hewi/2;
+	height: $hewi;
+	width: $hewi;
+}
+
+
 .navbar-inner {
 	@include gradient-bg(#F68A28, #F36C00);
 	//background: -moz-linear-gradient(center top , #F68A28, #F36C00) repeat scroll 0 0 transparent;
+}
+
+#front-img-holder {
+	@include ptl_circle(300px);
+	border: 1px solid grey;
+
+	a {
+		img {
+			@include ptl_circle(300px);
+			border: 1px solid black;
+			position: absolute;
+			float: right;
+			margin-right: 11%;
+			margin-top: -6%;
+		}
+	}
 }
