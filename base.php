@@ -13,12 +13,12 @@
   ?>
 
   <div id="wrap" class="container" role="document">
-    <div id="content" class="row">
-      <div class="page-header">
+    <div class="page-header">
         <h1>
           <?php echo roots_title(); ?>
         </h1>
-      </div>
+    </div>
+    <div id="content" class="row">
       <div id="main" class="<?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>
       </div>
