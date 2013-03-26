@@ -34,18 +34,42 @@
 	//background: -moz-linear-gradient(center top , #F68A28, #F36C00) repeat scroll 0 0 transparent;
 }
 
+#main {
+	margin: auto;
+	width: 100%;
+
+	.page-header {
+		padding: 9px;
+		margin: 0;
+		border-bottom: 1px solid #eee;
+		background: rgb(55, 235, 55);
+		text-align: center;
+		color: whitesmoke;
+		text-shadow: 
+			0 1px 0 black, 
+			0 2px 0 black, 
+			0 3px 0 black, 
+			0 4px 0 black, 
+			0 5px 0 black, 
+			0 6px 1px rgba(0, 0, 0, 0.1), 
+			0 0 5px rgba(0, 0, 0, 0.1), 
+			0 1px 3px rgba(0, 0, 0, 0.3), 
+			0 3px 5px rgba(0, 0, 0, 0.2), 
+			0 5px 10px rgba(0, 0, 0, 0.25), 
+			0 10px 10px rgba(0, 0, 0, 0.2), 
+			0 20px 20px rgba(0, 0, 0, 0.15);
+	}
+}
+
 #front-img-holder {
 	@include ptl_circle(300px);
 	border: 1px solid grey;
+	float: right;
 
 	a {
 		img {
 			@include ptl_circle(300px);
 			border: 1px solid black;
-			position: absolute;
-			float: right;
-			margin-right: 11%;
-			margin-top: -6%;
 		}
 	}
 }
