@@ -12,6 +12,8 @@
   -webkit-border-#{$vert}-#{$horz}-radius: $radius;
 }
 
+//	Background Gradient
+//
 @mixin gradient-bg($color1, $color2) {
   background-color: $color1;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});

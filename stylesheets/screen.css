@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 32, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .navbar-inner {
   background-color: #f68a28;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f68a28, endColorstr=#f36c00);
@@ -10,7 +10,7 @@
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f68a28), to(#f36c00));
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .page-header {
   padding: 10px;
   margin: 0;
@@ -21,13 +21,13 @@
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 #main {
   margin: auto;
   width: 100%;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 #front-img-holder {
   border-radius: 150px;
   height: 300px;
@@ -35,7 +35,7 @@
   border: 1px solid grey;
   float: right;
 }
-/* line 70, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 #front-img-holder a img {
   border-radius: 150px;
   height: 300px;
