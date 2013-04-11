@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Websites Template
+Template Name: Website Template
 */
 ?>
 
