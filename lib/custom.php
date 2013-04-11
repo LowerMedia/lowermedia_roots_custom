@@ -12,10 +12,10 @@
 add_action( 'init', 'create_post_type' );
 function create_post_type() 
   {
-  	register_post_type( 'website',
+  	register_post_type( 'lowermedia_website',
   		array(
   			'labels' => array(
-  				'name' => __( 'Website' ),
+  				'name' => __( 'Websites' ),
   				'singular_name' => __( 'Website' ),
   				'add_new' => __( 'Add Website' ),
 	            'all_items' => __( 'All Websites' ),
@@ -45,7 +45,7 @@ function create_post_type()
   		'public' => true,
   		'has_archive' => true,
   		'supports'=> array('thumbnail','title','editor', 'custom-fields', 'excerpt', 'revisions'),
-  		'rewrite' => array('slug' => 'website'),
+  		'rewrite' => array('slug' => 'websites'),
   		)
   	);
   }
