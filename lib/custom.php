@@ -5,8 +5,8 @@
 
 /*############################################################################################
 #
-#   CREATE BAND POST TYPE
-#   //This function creates a custom post type of band
+#   CREATE WEBSITE CUSTOM POST TYPE
+#   //This function creates a custom post type of website
 */
 
 add_action( 'init', 'create_post_type' );
@@ -29,18 +29,18 @@ function create_post_type()
 	            'parent_item_colon' => __( 'Parent Website' )
 	            //'menu_name' => default to 'name'
   			),
-  		/*'capability_type' => 'band',
+  		/*'capability_type' => 'website',
 		'capabilities' => array(
-			'publish_posts' => 'publish_band',
-			'edit_posts' => 'edit_band',
-			'edit_others_posts' => 'edit_others_band',
-			'delete_posts' => 'delete_band',
-			'delete_others_posts' => 'delete_others_band',
-			'read_private_posts' => 'read_private_band',
-			'edit_post' => 'edit_band',
-			'delete_post' => 'delete_band',
-			'read_post' => 'read_band',
-			'edit_page' => 'edit_band',
+			'publish_posts' => 'publish_website',
+			'edit_posts' => 'edit_website',
+			'edit_others_posts' => 'edit_others_website',
+			'delete_posts' => 'delete_website',
+			'delete_others_posts' => 'delete_others_website',
+			'read_private_posts' => 'read_private_website',
+			'edit_post' => 'edit_website',
+			'delete_post' => 'delete_website',
+			'read_post' => 'read_website',
+			'edit_page' => 'edit_website',
 		),*/
   		'public' => true,
   		'has_archive' => true,
