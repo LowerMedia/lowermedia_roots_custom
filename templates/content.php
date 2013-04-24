@@ -13,7 +13,7 @@
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div id="website-img-holder">
-      <a href=<?php $websitevariable2="http://"; $websitevariable2.=the_title(); echo $websitevariable;?> ><?php the_post_thumbnail(); ?></a>
+      <a href=<?php echo 'http://';?><?php the_title();?> ><?php the_post_thumbnail(); ?></a>
     </div>
     <div class="entry-summary">
       <?php the_excerpt(); ?>
