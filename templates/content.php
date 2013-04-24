@@ -9,7 +9,7 @@
 <?php while (have_posts()) : the_post(); ?>
   <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header>
-      <h2><a href=<?php $websitevariable2="http://"; $websitevariable2.=the_title(); echo $websitevariable;?> ><?php the_title(); ?></a></h2><!-- the_permalink(); -->
+      <h2><a href=<?php echo 'http://';?><?php the_title();?> ><?php the_title(); ?></a></h2><!-- the_permalink(); -->
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div id="website-img-holder">
