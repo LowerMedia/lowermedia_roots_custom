@@ -12,6 +12,7 @@
       <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
+    <div id="website-img-holder"><?php the_post_thumbnail(); ?></div>
     <div class="entry-summary">
       <?php the_excerpt(); ?>
     </div>
