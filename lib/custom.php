@@ -50,3 +50,27 @@ function create_post_type()
   	);
   }
   
+
+  /*############################################################################################
+#
+#   REGISTER WDIGETS
+#   //This function registers home page widget 4
+*/
+function lowermedia_net_responsive_widgets_init() {
+    register_sidebar( array(
+		'name' => 'Social Media Icon Area',
+		'id' => 'social_media_icon_holder',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+}
+add_action('widgets_init', 'lowermedia_net_responsive_widgets_init');
+
+/*############################################################################################
+#
+#   ALLOW WIDGETS TO PROCESS SHORTCODES
+#   
+*/
+add_filter('widget_text', 'do_shortcode');
