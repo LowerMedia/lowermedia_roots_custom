@@ -1,3 +1,8 @@
+<?php 
+if ( dynamic_sidebar('social_media_icon_holder') ) : 
+else : 
+?>
+<?php endif; ?>
 <footer id="content-info" class="container" role="contentinfo">
   <?php dynamic_sidebar('sidebar-footer'); ?>
   <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
