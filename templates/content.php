@@ -40,3 +40,9 @@
     </ul>
   </nav>
 <?php endif; ?>
+
+<?php 
+if ( dynamic_sidebar('social_media_icon_holder') ) : 
+else : 
+?>
+<?php endif; ?>
