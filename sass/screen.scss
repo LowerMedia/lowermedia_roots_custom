@@ -64,14 +64,35 @@
 }
 
 #front-img-holder {
-	@include ptl_circle(300px);
+	@include ptl_circle(250px);
 	border: 1px solid grey;
 	float: right;
-
+	background-image: url('http://lowermedia.net/assets/iowa-city-web-guru-wordpress-drupal-techi-lowermedia_pete-lower-i9mh-1024x643.png');
+	background-size: 400px;
+	-webkit-animation: 3s slideBg infinite linear;
+    -moz-animation: 3s slideBg infinite linear;
 	a {
 		img {
-			@include ptl_circle(300px);
+			@include ptl_circle(250px);
 			border: 1px solid black;
 		}
 	}
+}
+
+@-moz-keyframes slideBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 250px 0; /* 200px = width of background image */
+    }
+}
+
+@-webkit-keyframes slideBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 250px 0; /* 200px = width of background image */
+    }
 }
