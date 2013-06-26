@@ -30,6 +30,18 @@
 	width: $hewi;
 }
 
+#content {
+    color: #333333;
+    font-family: "BenchNine",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+
+    li {
+    	line-height: 34px;
+	}
+}
+
+
 
 .navbar-inner {
 	@include gradient-bg(#F68A28, #F36C00);
