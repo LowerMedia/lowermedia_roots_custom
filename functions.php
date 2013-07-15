@@ -16,3 +16,17 @@ require_once locate_template('/lib/htaccess.php');        // Rewrites for assets
 require_once locate_template('/lib/widgets.php');         // Sidebars and widgets
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
+
+/**
+* Register with hook 'wp_enqueue_scripts', which can be used for front end CSS and JavaScript
+*/
+add_action( 'wp_enqueue_scripts', 'lowermedia_add_sass_styles' );
+
+/**
+* Enqueue plugin style-file
+*/
+function lowermedia_add_sass_styles() {
+  // Respects SSL, screen.css is relative to the current file
+  wp_register_style( 'sass-styles', plugins_url('stylesheets/screen.css', __FILE__) );
+  wp_enqueue_style( 'sass-styles' );
+}

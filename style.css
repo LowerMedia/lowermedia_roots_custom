@@ -10,8 +10,10 @@ License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
 
-/* Import SASS Styles */
-@import url('stylesheets/screen.css');
+/* Import SASS Styles 
+	@import url('stylesheets/screen.css');
+*/
+
 
 body {
 background-color:#35B137;
