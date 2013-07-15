@@ -27,4 +27,4 @@ function lowermedia_add_sass_styles()
   // enqueing:
   wp_enqueue_style( 'sass-screen-styles' );
 }
-add_action('wp_enqueue_scripts', 'lowermedia_add_sass_styles');
+add_action('wp_enqueue_scripts', 'lowermedia_add_sass_styles', 100);
