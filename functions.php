@@ -27,6 +27,6 @@ add_action( 'wp_enqueue_scripts', 'lowermedia_add_sass_styles' );
 */
 function lowermedia_add_sass_styles() {
   // Respects SSL, screen.css is relative to the current file
-  wp_register_style( 'sass-styles', plugins_url('stylesheets/screen.css', __FILE__) );
+  wp_register_style( 'sass-styles', 'stylesheets/screen.css' );
   wp_enqueue_style( 'sass-styles' );
 }
