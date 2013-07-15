@@ -17,16 +17,19 @@ require_once locate_template('/lib/widgets.php');         // Sidebars and widget
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
 
-/**
-* Register with hook 'wp_enqueue_scripts', which can be used for front end CSS and JavaScript
-*/
-add_action( 'wp_enqueue_scripts', 'lowermedia_add_sass_styles' );
 
-/**
-* Enqueue plugin style-file
-*/
-function lowermedia_add_sass_styles() {
-  // Respects SSL, screen.css is relative to the current file
-  wp_register_style( 'sass-styles', 'stylesheets/screen.css' );
-  wp_enqueue_style( 'sass-styles' );
+function lowermedia_add_sass_styles()  
+{ 
+  // Register the style like this for a theme:  
+  // (First the unique name for the style (custom-style) then the src, 
+  // then dependencies and ver no. and media type)
+  wp_register_style( 'sass-screen-styles', 
+    get_template_directory_uri() . 'stylesheets/screen.css', 
+    array(), 
+    '20130715', 
+    'all' );
+
+  // enqueing:
+  wp_enqueue_style( 'sass-screen-styles' );
 }
+add_action('wp_enqueue_scripts', 'lowermedia_add_sass_styles');
