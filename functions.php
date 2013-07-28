@@ -29,8 +29,9 @@ function lowermedia_add_sass_styles()
 }
 add_action('wp_enqueue_scripts', 'lowermedia_add_sass_styles', 100);
 
-function lowermedia_add_admin_favicon() {
+function lowermedia_add_favicon() {
 	$favicon_url = get_stylesheet_directory_uri().'/favicon.ico';
 	echo '<link rel="shortcut icon" href="'.$favicon_url .'" />';
 }
-add_action('admin_head', 'lowermedia_add_admin_favicon');
+add_action('admin_head', 'lowermedia_add_favicon');
+add_action('wp_head', 'lowermedia_add_favicon');
