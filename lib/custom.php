@@ -105,7 +105,7 @@ function lowermedia_website_link_meta_box( $object, $box ) {
 	<p>
 		<label for="lowermedia-website-link"><?php _e( "Add link to website: mywebsite.com", 'example' ); ?></label>
 		<br /><br />
-		http://<input style='width:100px' class="widefat" type="text" name="lowermedia-website-link" id="lowermedia-website-link" value="<?php echo esc_attr( get_post_meta( $object->ID, 'lowermedia_website_link', true ) ); ?>" size="15" />
+		http://<input style='width:100px' class="widefat" type="text" name="lowermedia-website-link" id="lowermedia-website-link" value="<?php echo esc_url( get_post_meta( $object->ID, 'lowermedia_website_link', true ) ); ?>" size="15" />
 	</p>
 <?php }
 
