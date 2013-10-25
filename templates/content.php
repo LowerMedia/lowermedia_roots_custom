@@ -12,7 +12,7 @@
       <h2><a href=<?php echo 'http://';?><?php the_title();?> ><?php the_title(); ?></a></h2><!-- the_permalink(); -->
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
-    <div id="website-img-holder">
+    <div class="website-img-holder">
       <a class='fancybox' href=<?php echo 'http://';?><?php the_title();?> ></a>
       <a class='fancybox'><?php the_post_thumbnail('medium'); ?></a>
     </div>
