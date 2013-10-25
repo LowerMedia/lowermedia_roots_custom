@@ -13,7 +13,8 @@
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div id="website-img-holder">
-      <a class='fancybox' href=<?php echo 'http://';?><?php the_title();?> ><?php the_post_thumbnail(); ?></a>
+      <a class='fancybox' href=<?php echo 'http://';?><?php the_title();?> ></a>
+      <div class='fancybox'><?php the_post_thumbnail(); ?></div>
     </div>
     <div class="entry-summary">
       <?php the_excerpt(); ?>
