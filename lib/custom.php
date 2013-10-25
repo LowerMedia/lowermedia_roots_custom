@@ -90,7 +90,7 @@ function lowermedia_add_website_link_meta_boxes() {
 		'lowermedia-website-link',			// Unique ID
 		esc_html__( 'Webiste Link', 'example' ),		// Title
 		'lowermedia_website_link_meta_box',		// Callback function
-		'websites',					// Admin page (or post type)
+		'lowermedia_website',					// Admin page (or post type)
 		'side',					// Context
 		'default'					// Priority
 	);
