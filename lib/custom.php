@@ -88,9 +88,9 @@ function lowermedia_add_website_link_meta_boxes() {
 
 	add_meta_box(
 		'lowermedia-website-link',			// Unique ID
-		esc_html__( 'Vimeo Link', 'example' ),		// Title
+		esc_html__( 'Webiste Link', 'example' ),		// Title
 		'lowermedia_website_link_meta_box',		// Callback function
-		'session_video',					// Admin page (or post type)
+		'websites',					// Admin page (or post type)
 		'side',					// Context
 		'default'					// Priority
 	);
