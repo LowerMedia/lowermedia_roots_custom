@@ -82,6 +82,20 @@ add_filter('widget_text', 'do_shortcode');
 #   
 */
 
+add_action( 'add_meta_boxes', 'lowermedia_add_website_link_meta_boxes' );
+/* Create one or more meta boxes to be displayed on the post editor screen. */
+function lowermedia_add_website_link_meta_boxes() {
+
+	add_meta_box(
+		'lowermedia-website-link',			// Unique ID
+		esc_html__( 'Vimeo Link', 'example' ),		// Title
+		'lowermedia_website_link_meta_box',		// Callback function
+		'session_video',					// Admin page (or post type)
+		'side',					// Context
+		'default'					// Priority
+	);
+}
+
 /* Display the post meta box. */
 function lowermedia_website_link_meta_box( $object, $box ) { 
 
