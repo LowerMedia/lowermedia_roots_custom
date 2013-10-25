@@ -14,7 +14,7 @@
     </header>
     <div id="website-img-holder">
       <a class='fancybox' href=<?php echo 'http://';?><?php the_title();?> ></a>
-      <div class='fancybox'><?php the_post_thumbnail(); ?></div>
+      <a class='fancybox'><?php the_post_thumbnail('medium'); ?></a>
     </div>
     <div class="entry-summary">
       <?php the_excerpt(); ?>
