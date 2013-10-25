@@ -11,24 +11,25 @@
       get_template_part('templates/header');
     }
   ?>
-
-  <div id="wrap" class="container" role="document">
-    <div class="page-header">
-        <h1>
-          <?php echo roots_title(); ?>
-        </h1>
-    </div>
-    <div id="content" class="row">
-      <div id="main" class="<?php echo roots_main_class(); ?>" role="main">
-        <?php include roots_template_path(); ?>
+  <div id="outwrap" >
+    <div id="wrap" class="container" role="document">
+      <div class="page-header">
+          <h1>
+            <?php echo roots_title(); ?>
+          </h1>
       </div>
-      <?php if (roots_display_sidebar()) : ?>
-      <aside id="sidebar" class="<?php echo roots_sidebar_class(); ?>" role="complementary">
-        <?php get_template_part('templates/sidebar'); ?>
-      </aside>
-      <?php endif; ?>
-    </div><!-- /#content -->
-  </div><!-- /#wrap -->
+      <div id="content" class="row">
+        <div id="main" class="<?php echo roots_main_class(); ?>" role="main">
+          <?php include roots_template_path(); ?>
+        </div>
+        <?php if (roots_display_sidebar()) : ?>
+        <aside id="sidebar" class="<?php echo roots_sidebar_class(); ?>" role="complementary">
+          <?php get_template_part('templates/sidebar'); ?>
+        </aside>
+        <?php endif; ?>
+      </div><!-- /#content -->
+    </div><!-- /#wrap -->
+  </div>
 
   <?php get_template_part('templates/footer'); ?>
 
