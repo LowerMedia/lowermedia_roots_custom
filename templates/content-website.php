@@ -14,7 +14,7 @@
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div class="entry-content">
-      <div><?php the_post_thumbnail(); ?></div>
+      <div class='fancybox'><?php the_post_thumbnail(); ?></div>
       <?php the_content(); ?>
     </div>
     <footer>
