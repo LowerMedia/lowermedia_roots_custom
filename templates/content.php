@@ -13,7 +13,7 @@
       <?php get_template_part('templates/entry-meta'); ?>
     </header>
     <div class="website-img-holder">
-      <a class='fancybox' href=<?php echo 'http://';?><?php the_title();?> ></a>
+      <a class='fancybox' href=<?php echo 'http://';?><?php get_post_meta( get_the_ID(), 'lowermedia_website_link', true )?> ></a>
       <a class='fancybox' href="#fancybox-link-<?php the_ID();?>" ><?php the_post_thumbnail('medium'); ?></a>
       <div id="fancybox-link-<?php the_ID();?>">
         <?php the_post_thumbnail('large'); ?>
