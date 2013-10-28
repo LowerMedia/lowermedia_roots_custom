@@ -88,7 +88,7 @@ function lowermedia_add_website_link_meta_boxes() {
 
 	add_meta_box(
 		'lowermedia-website-link',			// Unique ID
-		esc_html__( 'Webiste Link', 'example' ),		// Title
+		esc_html__( 'Website Link', 'example' ),		// Title
 		'lowermedia_website_link_meta_box',		// Callback function
 		'lowermedia_website',					// Admin page (or post type)
 		'side',					// Context
@@ -139,7 +139,8 @@ function lowermedia_save_website_link_meta( $post_id, $post ) {
 
 	/* Get the posted data and sanitize it for use as an HTML class. */
 	//$new_meta_value = 'http://vimeo.com/';
-	$new_meta_value = ( isset( $_POST['lowermedia-website-link'] ) ? sanitize_html_class( $_POST['lowermedia-website-link'] ) : '' );
+	//$new_meta_value = ( isset( $_POST['lowermedia-website-link'] ) ? sanitize_html_class( $_POST['lowermedia-website-link'] ) : '' );
+	$new_meta_value = ( isset( $_POST['lowermedia-website-link'] ) ? $_POST['lowermedia-website-link'] : '' );
 
 	/* Get the meta key. */
 	$meta_key = 'lowermedia_website_link';
