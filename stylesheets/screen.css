@@ -2,19 +2,66 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+body {
+  background-color: #35B137;
+}
+
+/* line 12, ../sass/screen.scss */
+#wrap {
+  background: none repeat scroll 0 0 white;
+  margin: auto;
+  width: 100%;
+}
+
+/* line 18, ../sass/screen.scss */
+#content {
+  margin: auto;
+  width: 70%;
+}
+
+/* line 24, ../sass/screen.scss */
+.navbar-inner .container {
+  width: 70%;
+  margin: auto;
+}
+
+/* line 29, ../sass/screen.scss */
+body.top-navbar {
+  padding-top: 40px;
+}
+
 /* line 33, ../sass/screen.scss */
+.navbar .nav > li > a {
+  color: white;
+  float: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 black;
+}
+
+/*FOOTER STYLES*/
+/* line 43, ../sass/screen.scss */
+#content-info {
+  background-color: #35B137;
+  margin: auto;
+  width: 100%;
+}
+
+/* line 73, ../sass/screen.scss */
 #content {
   color: #333333;
   font-family: "BenchNine",Helvetica,Arial,sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
-/* line 39, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 #content li {
   line-height: 34px;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .navbar-inner {
   background-color: #f68a28;
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f68a28, endColorstr=#f36c00);
@@ -22,7 +69,7 @@
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f68a28), to(#f36c00));
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .page-header {
   padding: 10px;
   margin: 0;
@@ -33,13 +80,13 @@
   text-shadow: 0 1px 0 black, 0 2px 0 black, 0 3px 0 black, 0 4px 0 black, 0 5px 0 black, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 #main {
   margin: auto;
   width: 100%;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 #front-img-holder {
   border-radius: 125px;
   height: 250px;
@@ -51,7 +98,7 @@
   -webkit-animation: 3s slideBg infinite linear;
   -moz-animation: 3s slideBg infinite linear;
 }
-/* line 87, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #front-img-holder a img {
   border-radius: 125px;
   height: 250px;
@@ -60,12 +107,12 @@
 }
 
 @-moz-keyframes slideBg {
-  /* line 95, ../sass/screen.scss */
+  /* line 135, ../sass/screen.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 98, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   100% {
     background-position: 250px 0;
     /* 200px = width of background image */
@@ -73,36 +120,36 @@
 }
 
 @-webkit-keyframes slideBg {
-  /* line 104, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
   0% {
     background-position: 0 0;
   }
 
-  /* line 107, ../sass/screen.scss */
+  /* line 147, ../sass/screen.scss */
   100% {
     background-position: 250px 0;
     /* 200px = width of background image */
   }
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 header time + p.byline {
   visibility: hidden;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 #content {
   padding-bottom: 20px;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .post-type-archive-lowermedia_website .lowermedia_website {
   width: 30%;
   float: left;
   padding: 1%;
   height: 230px;
 }
-/* line 127, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .post-type-archive-lowermedia_website .website-img-holder {
   border: 1px solid #d3d3d3;
   height: 140px;
@@ -111,17 +158,17 @@ header time + p.byline {
   box-shadow: 0px 0px 52px -14px;
   margin: auto;
 }
-/* line 136, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .post-type-archive-lowermedia_website h2 {
   text-align: center;
   font-size: 20px;
 }
-/* line 141, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .post-type-archive-lowermedia_website .hentry time {
   display: none;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #content-info p {
   margin: auto;
   width: 6%;
