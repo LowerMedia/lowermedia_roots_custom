@@ -9,3 +9,118 @@ Author URI:         http://benword.com/
 License:            MIT License
 License URI:        http://opensource.org/licenses/MIT
 */
+/*
+Welcome to Custom CSS!
+
+CSS (Cascading Style Sheets) is a kind of code that tells the browser how
+to render a web page. You may delete these comments and get started with
+your customizations.
+
+By default, your stylesheet will be loaded after the theme stylesheets,
+which means that your rules can take precedence and override the theme CSS
+rules. Just write here what you want to change, you don't need to copy all
+your theme's stylesheet content.
+*/
+
+/*Animation Prefs*/
+@-webkit-keyframes pulse {
+     /* 0% {background-color: #45CEEF;}
+     25% {background-color: #FFF5A5;}
+     50% {background-color: #FFD4DA;}
+     75% {background-color: #99D2E4;}
+     100% {background-color: #D8CAB4;}*/
+			0% {background-color: #fff;}
+		25% {background-color:#78EB77;}
+		50% {background-color:#F58D3A;}
+		75% {background-color:#35B137;}
+		100% {background-color:#fff;}
+}
+
+@media all and (min-width: 1024px){
+	.row {
+			/* -webkit-animation: pulse 80s infinite alternate; */
+			background-color: #fff;
+	}
+}
+
+#content {
+		margin: auto;
+		width: 100%;
+		padding: 0;
+}
+
+#content-info p {
+	margin: none;
+	width: auto;
+	padding: 0;
+	text-align: center;
+}
+
+.home-add-holder {
+	width:100%;
+	margin:auto;
+	background:black;
+	
+	a {
+			width: 80%;
+			margin: auto;
+			padding: 0 20%;
+		}
+}
+
+#main h2 {margin: 60px 0 20px 0;}
+
+.post-type-archive-lowermedia_website {
+	
+	#main h2 {margin: 60px 0 0px 0;}
+	
+	.lowermedia_website {height:320px;margin-top:-40px;}
+	
+	#post-nav li a {
+		margin-top: 390px;
+		margin-left: -310px;
+	}
+}
+
+@media all and (max-width: 699px) and (min-width: 520px) {}
+
+@media all and (max-width: 1200px) {
+    .post-type-archive-lowermedia_website .lowermedia_website {
+        width: 50%;
+        padding: 0%;
+    }
+}
+
+@media all and (max-width: 979px){
+    .navbar-fixed-top 
+    {
+        margin:0;
+        padding:0;
+    }
+    
+    body.top-navbar {
+        padding-top:0;
+    }
+    
+    body {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 790px){
+    .post-type-archive-lowermedia_website .lowermedia_website {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .post-type-archive-lowermedia_website h2 {
+        margin-bottom:-20px
+    }
+}
+
+#main {
+width: 70%;
+float: none;
+}
