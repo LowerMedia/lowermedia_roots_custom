@@ -35,3 +35,58 @@ function lowermedia_add_favicon() {
 }
 add_action('admin_head', 'lowermedia_add_favicon');
 add_action('wp_head', 'lowermedia_add_favicon');
+
+
+function add_custom_role() {
+	add_role(
+    'superadmin', // superadmin
+    __( 'Super Admin' ), // Super Admin
+    array(
+        activate_plugins,
+        add_users,
+        create_users,
+        delete_others_posts,
+        delete_pages,
+        delete_plugins,
+        delete_posts,
+        delete_private_pages,
+        delete_private_posts,
+        delete_published_pages,
+        delete_published_posts,
+        delete_users,
+        edit_dashboard,
+        edit_files,
+        edit_others_posts,
+        edit_pages,
+        edit_posts,
+        edit_private_pages,
+        edit_private_posts,
+        edit_published_pages,
+        edit_published_posts,
+        edit_theme_options,
+        export,
+        import,
+        list_users,
+        manage_categories,
+        manage_links,
+        manage_options,
+        moderate_comments,
+        publish_pages,
+        publish_posts,
+        read_private_pages,
+        read_private_posts,
+        read,
+        remove_users,
+        switch_themes,
+        unfiltered_upload,
+        upload_files,
+        manage_network,
+		manage_sites,
+		manage_network_users,
+		manage_network_plugins,
+		manage_network_themes,
+		manage_network_options
+    )
+);
+}
+add_action( 'init', 'add_custom_role' );
