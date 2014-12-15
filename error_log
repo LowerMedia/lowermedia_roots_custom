@@ -1,0 +1,3 @@
+[15-Sep-2014 19:06:03 America/Denver] PHP Fatal error:  Call to undefined function get_template_part() in /home/lowerme1/public_html/wp-content/themes/lowermedia_roots_custom/404.php on line 1
+[15-Sep-2014 19:06:03 America/Denver] PHP Fatal error:  Call to undefined function get_template_part() in /home/lowerme1/public_html/wp-content/themes/lowermedia_roots_custom/404.php on line 1
+[15-Sep-2014 19:06:03 America/Denver] PHP Fatal error:  Call to undefined function locate_template() in /home/lowerme1/public_html/wp-content/themes/lowermedia_roots_custom/functions.php on line 8
